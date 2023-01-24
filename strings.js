@@ -6,6 +6,6 @@ let estudianteMinus = estudiante.toLocaleLowerCase();
 let estudianteLetras = estudiante.length;
 let estudianteInicio = estudiante.charAt(0);
 let estudianteFinal = estudiante.slice(-1);
-let estudianteEspacio =  estudiante.trim();   
+let estudianteEspacio =  estudiante.replace(/ /g, "")   
 let estudianteNombre = estudiante.includes(`${nombre}`)
-console.log(estudianteNombre)
+console.log(estudianteEspacio)
